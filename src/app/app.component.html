@@ -2,10 +2,11 @@
    <nav class="left-block-of-the-header">
       <div class="left-photo"><img src="../assets/img/Frame.svg" alt=""></div>
          <div class="three-words-to-the-left">
-            <a class="home" href="">Главная </a>
-            <a class="About-the-company" href="">О компании </a>
-            <a class="catalog"  href=""> Каталог </a>
+            <a class="home" href="">{{headeritem1}} </a>
+            <a class="About-the-company" href=""> {{aboutCompany}} </a>
+            <a class="catalog"  href="" *ngIf = "openCatalog"> {{headeritem3}} </a>
         </div>
+        <button (click)="openCatalog = !openCatalog ">скрыть\показать каталог</button>
    </nav>
       <nav class="right-block-of-the-header"  >
          <div class="right-side-navigation"> 
@@ -22,11 +23,11 @@
 <div class="yellow-profile-header-block">
      <nav class="yellow-block-navigation-left">
          <a href=""> <img src="../assets/img/light.svg" alt=""> </a>
-           <a class="directory" href=""> Каталог</a>   
-           <a class="Building-materials" href=""> Стройматериалы</a>
-           <a class="Tools" href=""> Инструменты</a>
-           <a class="Electrics" href=""> Электрика</a>
-           <a class="Interior-and-clothing" href=""> Интерьер и одежда</a>    
+           <a class="directory" href=""> {{hedertoo1}}</a>   
+           <a class="Building-materials" href="">{{hedertoo2}}</a>
+           <a class="Tools" href=""> {{hedertoo3}}</a>
+           <a class="Electrics" href="">{{hedertoo4}}</a>
+           <a class="Interior-and-clothing" href="">{{hedertoo5}}</a>    
      </nav>
    <nav class="right-block-yellow">
       <div class="block">
@@ -39,33 +40,29 @@
           </a> 
    </nav>
 </div>
- <div  class="big-photo">
+            <button (click)="isShowPhot0 = !isShowPhot0"> скрыть\показать </button>
+ <div  class= "big-photo" *ngIf="isShowPhot0" >
   <div class="inscription">Инструмент для вашего бизнеса </div>
  </div>
-
 <div class="content">
  <div class="small-orange-photos">
     <div class="first-column">
       <img src="../assets/img/Maskgroup.png" alt="">
       <span>Большой ассортимент строительных материалов всегда в наличии</span>
     </div>
-    <div  class="second-column">
+    <div  class="second-column"    >
        <img src="../assets/img/deliveri.png" alt="">
        <span>Доставка стройматериалов в течении четырех часов или в любое удобное время</span>
     </div>
-    <div class="third-column">
+    <div class="third-column" >
        <img src="../assets/img/Maskgroup.png" alt="">
        <span>Многоуровневая система управления качеством по стандарту ISO 9001</span>
     </div>
  </div>
-<div class="button-block">
-   <div class="numbers">
-      <button class="button-block_numbers_number">1</button>
-      <button class="button-block_numbers_number">2</button>
-      <button class="button-block_numbers_number">3</button>
-      <button class="button-block_numbers_number">4</button>
-      <button class="button-block_numbers_number">5</button>
-   </div>
+
+<div class="button-block"  >
+   <div class="numbers" >
+ <button *ngFor="let item of newPages"class="item-cards__pagination-button active-button"> {{item}} </button>
    </div>
    <div class="block-with-different-pictures">
                   <div class="inscription-painting">
@@ -447,9 +444,7 @@
 <div>dfervwosjfvowjs</div>
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Nisi reprehenderit nobis amet obcaecati, labore iusto, distinctio hic aut beatae similique veritatis 
-consequatur praesentium voluptatibus, mollitia quaerat ad facere saepe necessitatibus.
-<span>Lorem ipsum dolor, sit amet consectetur 
-   adipisicing elit. Perspiciatis quasi ipsa sequi tenetur, deserunt distinctio nobis.</span>
+consequatur praesentium voluptatibus, mollitia quaerat ad facere saepe necessitatibus.cd
   </div>
 </footer>
 
