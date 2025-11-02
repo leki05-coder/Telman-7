@@ -1,0 +1,138 @@
+
+.profile-header{
+display: flex;
+height: 80px;
+background-color: #4B565E;
+color: #fff;
+justify-content: space-around;
+}
+.left-block-of-the-header{ 
+display: flex;
+align-items: center;
+gap: 40px;
+width: 755px;
+height: 80px;
+}
+.three-words-to-the-left {
+display: flex;
+width: 273px;
+height: 19px;
+gap: 24px;
+}
+.home{
+color: #fff;
+}
+.About-the-company{
+color: #fff;
+}
+.catalog{
+color: #fff;
+}
+.right-block-of-the-header{
+font-size: 16px ;
+display: flex;
+gap: 45px;
+align-items: center;
+}
+.right-side-navigation{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 194px;
+height: 60px;
+}
+.right-border{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #F0BA4E;
+border-radius: 50px;
+width: 126px;
+height: 48px;
+gap: 5px;
+}
+.number{
+color: #fff;
+}
+.empty{
+color: #fff;
+}
+.Mask-group{
+width: 28px;
+height: 28px;
+}
+.yellow-profile-header-block{
+display: flex;
+justify-content: space-around;
+background-color: #F0BA4E;
+height: 48px; 
+}
+.yellow-block-navigation-left{
+width: 660px;
+height: 48px;
+display: flex;
+gap: 24px;
+justify-content: center;
+align-items: center;
+}
+.right-block-yellow{
+width: 660px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.search-bar{
+background-color: #F0BA4E;
+width: 250px;
+border: none;
+outline: none;
+}
+.loupe{
+width: 24px;
+height: 24px;
+margin-bottom: 5px;
+}
+.block{
+display: flex;
+justify-content: space-around;
+border-bottom: 1px solid #000;
+}
+.map{
+width: 69px;
+height: 14px;
+font-size: 14px;
+color: #fff;
+}
+.directory{
+color: #000;
+}
+.Building-materials{
+color: #000;
+}
+.Tools{
+color: #000;
+}
+.Electrics{
+color: #000;
+}
+.Interior-and-clothing{
+color: #000;
+}
+.common-block{
+display: flex;
+flex-wrap: wrap; 
+}
+.indoor-unit{
+border: 1px solid #000;
+height: 300px;
+width: 250px;
+box-shadow: #aa2020 5px 5px 5px ;
+}
+.delete-button{
+border: olive 3px solid;
+border-radius: 8px;
+background-color: aqua;
+
+}

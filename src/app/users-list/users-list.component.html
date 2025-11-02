@@ -1,0 +1,13 @@
+
+ИМЕНА ЮЗЕРОВ 
+
+<div style="display: flex; height: 300px;" >
+<div *ngFor="let item of users " style= " border: 1px solid black; width: 300px;"> 
+<p>{{$any(item).name}}</p>
+<p>{{$any(item).username}}</p>
+<P>{{$any(item).email}}</P>
+<p>{{$any(item).website}}</p>
+<p>{{$any(item).company.name}}</p>
+
+</div>
+</div>
