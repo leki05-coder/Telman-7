@@ -1,21 +1,22 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet ,} from '@angular/router';
  
 
  
 
 const marell = (text : string) => text;
-const aboutCompany : string = marell (" о компании ");
+const text : string = ('о компании ');
 
 
-const newPages :number[] = [5,4,3,2,1] ;
+const newPages : number [] = [5,4,3,2,1] ;
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports:[ RouterOutlet, NgIf, NgFor],
+  imports: [RouterOutlet, NgIf , NgFor ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -23,7 +24,7 @@ const newPages :number[] = [5,4,3,2,1] ;
 export class AppComponent {
   title = 'plow';
 
-   aboutCompany : string = 'о компании'
+   aboutCompany : string = text
  
   openCatalog = true ;
   isShowPhot0 = true ; 

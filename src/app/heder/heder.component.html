@@ -1,0 +1,61 @@
+<div  class="profile-header"> 
+   <nav class="left-block-of-the-header">
+      <div class="left-photo"><img src="../assets/img/Frame.svg" alt=""></div>
+         <div class="three-words-to-the-left">
+            <a class="home" href="">{{headeritem1}} </a>
+            <a class="About-the-company" href=""> {{aboutCompany}} </a>
+            <a class="catalog"  href="" *ngIf = "openCatalog"> {{headeritem3}} </a>
+        </div>
+        <button (click)="openCatalog = !openCatalog ">скрыть\показать каталог</button>
+   </nav>
+      <nav class="right-block-of-the-header"  >
+         <div class="right-side-navigation"> 
+             <a href=""> <img src="../assets/img/Phone.svg" alt=""></a>
+              <a class="number" href=""> +7 (965) 084-29-29 </a>
+         </div>
+              <a href=""> <img src="../assets/img/heart.svg" alt=""></a>
+           <div class="right-border">
+               <a href=""> <img  class="Mask-group" src="../assets/img/Maskgroup.svg" alt=""></a>
+               <a class="empty" href="">пусто</a>
+           </div>
+      </nav>
+   </div>
+<div class="yellow-profile-header-block">
+     <nav class="yellow-block-navigation-left">
+         <a href=""> <img src="../assets/img/light.svg" alt=""> </a>
+           <a class="directory" href=""> {{hedertoo1}}</a>   
+           <a class="Building-materials" href="">{{hedertoo2}}</a>
+           <a class="Tools" href=""> {{hedertoo3}}</a>
+           <a class="Electrics" href="">{{hedertoo4}}</a>
+           <a class="Interior-and-clothing" href="">{{hedertoo5}}</a>  
+           <button routerLink="/users">Пользователи</button>
+     </nav>
+   <nav class="right-block-yellow">
+      <div class="block">
+            <input class="search-bar" type="text"  name="searchbar" placeholder="Поиск, например Круг зачистной" >
+              <img class="loupe" src="../assets/img/loupe.svg" alt="">
+      </div>
+          <a class="map"> 
+             <img src="../assets/img/map.svg" alt="">
+             Москва
+          </a> 
+   </nav>
+</div>
+
+ИМЕНА ЮЗЕРОВ 
+  <div class="common-block">
+
+<div class="indoor-unit" *ngFor="let item of heder "> 
+
+<p>{{$any(item).name}}</p>
+<p>{{$any(item).username}}</p>
+<P>{{$any(item).email}}</P>
+<p>{{$any(item).website}}</p>
+<p>{{$any(item).company.name}}</p>
+<button class="delete-button" (click)="deleteHeder(item.id)">удалить юзера</button>
+</div>
+</div>
+
+
+
+
