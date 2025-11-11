@@ -1,0 +1,15 @@
+.common-block{
+display: flex;
+flex-wrap: wrap; 
+}
+.indoor-unit{
+border: 1px solid #000;
+height: 300px;
+width: 250px;
+box-shadow: #aa2020 5px 5px 5px ;
+}
+.delete-button{
+border: olive 3px solid;
+border-radius: 8px;
+background-color: aqua;
+}

@@ -1,13 +1,13 @@
 
 ИМЕНА ЮЗЕРОВ 
-
-<div style="display: flex; height: 300px;" >
-<div *ngFor="let item of users " style= " border: 1px solid black; width: 300px;"> 
-<p>{{$any(item).name}}</p>
-<p>{{$any(item).username}}</p>
-<P>{{$any(item).email}}</P>
-<p>{{$any(item).website}}</p>
-<p>{{$any(item).company.name}}</p>
-
+<div class="common-block">
+<div class="indoor-unit" *ngFor="let user of users "> 
+<p>{{(user).name}}</p>
+<p>{{(user).username}}</p>
+<P>{{(user).email}}</P>
+<p>{{(user).website}}</p>
+<p>{{(user).company.name}}</p>
+<button class="delete-button" (click)="deleteUser(user.id)">удалить юзера</button>
 </div>
 </div>
+

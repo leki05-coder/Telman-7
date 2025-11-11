@@ -22,40 +22,24 @@
    </div>
 <div class="yellow-profile-header-block">
      <nav class="yellow-block-navigation-left">
-         <a href=""> <img src="../assets/img/light.svg" alt=""> </a>
-           <a class="directory" href=""> {{hedertoo1}}</a>   
-           <a class="Building-materials" href="">{{hedertoo2}}</a>
-           <a class="Tools" href=""> {{hedertoo3}}</a>
-           <a class="Electrics" href="">{{hedertoo4}}</a>
-           <a class="Interior-and-clothing" href="">{{hedertoo5}}</a>  
+         <div href=""> <img src="../assets/img/light.svg" alt=""> </div>
+           <div class="directory" > {{heder1}}</div>   
+           <div class="Building-materials">{{heder2}}</div>
+           <div class="Tools" > {{heder3}}</div>
+           <div class="Electrics" >{{heder4}}</div>
+           <div class="Interior-and-clothing" >{{heder5}}</div>  
            <button routerLink="/users">Пользователи</button>
      </nav>
    <nav class="right-block-yellow">
       <div class="block">
             <input class="search-bar" type="text"  name="searchbar" placeholder="Поиск, например Круг зачистной" >
-              <img class="loupe" src="../assets/img/loupe.svg" alt="">
+              <img class="loupe" src="../assets/img/loupe.svg" alt="лупа">
       </div>
           <a class="map"> 
-             <img src="../assets/img/map.svg" alt="">
+             <img src="../assets/img/map.svg" alt="картина">
              Москва
           </a> 
    </nav>
 </div>
-
-ИМЕНА ЮЗЕРОВ 
-  <div class="common-block">
-
-<div class="indoor-unit" *ngFor="let item of heder "> 
-
-<p>{{$any(item).name}}</p>
-<p>{{$any(item).username}}</p>
-<P>{{$any(item).email}}</P>
-<p>{{$any(item).website}}</p>
-<p>{{$any(item).company.name}}</p>
-<button class="delete-button" (click)="deleteHeder(item.id)">удалить юзера</button>
-</div>
-</div>
-
-
 
 
